@@ -1,26 +1,35 @@
 <html>
 <head>
+<style>
+* {
+text-align: center;
+font-size: 20pt;
+}
+
+</style>
 <title>Basic Table</title>
 </head>
 <body>
-<table border="1" bordercolor="#FF0000">
+<table border="1" bordercolor="#FF0000" cellspacing="10pt" cellpadding="10px" width="100%" height="96%">
 <caption> Sample Table </caption>
-<thead>
-<th>col 1</th>
+<tr>
+<td rowspan="3">this<br>
+spans 3<br>
+rows</td>
 <th>col 2</th>
-<th>col 3</th>
-</thead>
+<th style="background-color: purple;">col 3</th>
+<th>col 4</th>
+</tr>
 
 <tr>
-	<td>4</td>
-	<td>5</td>
-	<td>6</td>
+	<td>1</td>
+	<td colspan="2">This spans 2 columns, (2,3)</td>
 </tr>
 	
 <tr>
-	<td>7</td>
-	<td>8</td>
-	<td>9</td>
+	<td style="background-color: purple;">4</td>
+	<td>5</td>
+	<td style="background-color: purple;">6</td>
 </tr>
 </table>
 </body>
