@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>My test page</title>
+<script src="http://www.purpledonutgames.com/jquery.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+function send()
+{
+	$.ajax({
+    type: "GET",
+    url: "Key.xml",
+    dataType: "xml",
+    success: process
+	});
+  
+		
+}
+
+function process(xml) 
+{	
+	if($('#username').val() == $(xml).find('username').text()
+		&& $('#password').val() == $(xml).find('password').text())
+	{
+		alert("Correct");
+		window.location = $(xml).find("namespace").text();
+	}
+	else
+	{
+		alert("Incorrect");
+	}
+}
+
+
+</script>
+</head>
+
+<body>
+Username: <input id="username"></input>
+Password: <input id="password" type="password"/>
+<button onclick="send()">Send</button>
+</body>
+</html>

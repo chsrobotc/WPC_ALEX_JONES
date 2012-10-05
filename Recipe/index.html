@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Alex Jones Recipe Page</title>
+<style type="text/css" media="all">
+		@import "style.css";
+	</style>
+	
+	
+	
+<script language="JavaScript">
+
+var links = new Array(3) 
+links[0] = "recipe1.html" 
+links[1] = "recipe2.html" 
+links[2] = "recipe3.html" 
+function go() { 
+var a = Math.round(Math.random()*3)
+var i = a 
+location = links[i] 
+}
+</script>
+</head>
+
+<body>
+
+<div class="nav">
+<a href="index.html">Home</a>
+<a href="recipe1.html">Candied Bacon</a>
+<a href="recipe2.html">Cake Balls</a>
+<a href="recipe3.html">Carmel Waffles</a>
+</div>
+<div class="content">
+<h1>Alex Jones Recipe Page</h1>
+<h2>For all (three) of your recipe needs</h2>
+<div class="show"><center>
+<a href="recipe1.html"><img src="bacon.jpg" alt="Click to go to Candied Bacon" width="300"/></a>
+<a href="recipe2.html"><img src="cake.jpg" alt="Click to go to Cake Balls" width="300"/></a>
+<a href="recipe3.html"><img src="waffles.jpg" alt="Click to go to Carmel Waffles" width="300"/></a>
+<a href="javascript:go()"><img src="question.jpg" alt="Go to a random page" width="300"/></a></center>
+</div>
+<p class="end">All recipies used are from <a href="http://www.epicurious.com" target="_blank">Epicurious.com</a></p>
+</div>
+</body>

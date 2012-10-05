@@ -1,0 +1,145 @@
+<html>
+<head>
+  <title>
+    Sports Teams, Players, and Facts: Baseball
+  </title>
+
+  <style>
+
+ol ol {
+list-style-type: lower-roman;
+}
+
+.first ul {
+list-style-type: disc;
+}
+
+.second ul {
+list-style-type: circle;
+}
+
+.third ul {
+list-style-type: square;
+}
+
+body {
+background-color: #1277FF;
+
+}
+
+h1 {
+font-size: 40pt;
+text-align: center;
+margin: 30px;
+padding: 40px;
+border-radius: 200px;
+background-color: 08F722;
+border: 8px solid #000000;
+}
+
+.main {
+display: block;
+margin: 30px;
+padding: 40px;
+border-radius: 200px;
+background-color: #08F722;
+border: 8px solid #000;
+}
+
+.main li {
+margin-left: 400px;
+}
+
+li {
+font-size: 20pt;
+}
+
+img {
+border: 8px solid #000;
+border-radius: 10px;
+}
+
+  </style>
+  
+  
+<script type="text/javascript" src="http://www.purpledonutgames.com/jquery.js"></script>
+<script>
+	$(document).ready( function() {
+		$('.info').hide();
+		$('.player').hide();
+		
+		
+		$('.py').click( function() {
+			$(this).next().slideToggle();
+		});
+		
+		$('.team').click( function() {
+			$(this).next().slideToggle();
+		});
+		
+		$('h1').click( function() {
+			$('li').slideToggle();
+		});
+		
+		$('.say').click( function() {
+			alert($(this).text());
+		});
+	});
+	
+</script>
+</head>
+
+<body>
+
+	<h1>Sports Teams, Players, and Facts: Baseball</h1>
+<div class="whole">
+  <ol class="main">
+	<div class="first">
+    <li class="team">Padres<br/><img src="Padres.jpg" alt="Padres Logo"/></li>  
+      <ol class="player">
+	<li class="py">Carlos Quintin<br/><img src="P1.jpg" width=50 alt="Carlos Quintin Picture"/></li>  
+	  <ul class="info">
+	    <li class="say">Right fielder</li>
+	    <li class="say">30 Years old</li>
+	  </ul>
+	<li class="py">Yonder Alonso<br/><img src="P2.jpg" width=50 alt="Yonder Alonso Picture"/></li> 
+	  <ul class="info">
+	    <li class="say">First Baseman</li>
+	    <li class="say">Went to University of Miami</li>
+	  </ul>
+      </ol>
+    </div>
+    <div class="second">
+    <li class="team">Rockies<br/><img src="Rockies.jpg" alt="Rockies Logo"/></li>  
+      <ol class="player">
+	<li class="py">Troy Tulowitzki<br/><img src="R1.jpg" width=50 alt="Troy Tulowitzki Picture"/></li> 
+	  <ul class="info">
+	    <li class="say">Shortstop</li>
+	    <li class="say">Has only played for Rockies</li>
+	  </ul>
+	<li class="py">Todd Helton<br/><img src="R2.jpg" width=50 alt="Todd Helton Picture"/></li> 
+	  <ul class="info">
+	    <li class="say">Infielder</li>
+	    <li class="say">Is left handed</li>
+	  </ul>
+      </ol>
+    </div>
+    <div class="third">
+    <li class="team">Red Sox<br/><img src="RedSox.jpg" alt="Red Sox Logo"/></li>  
+      <ol class="player">
+	<li class="py">David Ortiz<br/> <img src="S1.jpg" width=50 alt="David Ortiz Picture"/></li>
+	  <ul class="info">
+	    <li class="say">Designated hitter</li>
+	    <li class="say">Has been playing for 10 years</li>
+	  </ul>
+	<li class="py">Josh Beckett<br/><img src="S2.jpg" width=50 alt="Josh Beckett"/></li> 
+	  <ul class="info">
+	    <li class="say">Pitcher</li>
+	    <li class="say">Born May 15th</li>
+	  </ul>
+      </ol>
+    </div>
+  </ol>
+</div>
+</body>
+</html>
