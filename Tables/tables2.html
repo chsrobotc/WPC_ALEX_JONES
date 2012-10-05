@@ -1,5 +1,26 @@
 <html>
 <head>
+
+<script type="text/javascript" src="http://www.purpledonutgames.com/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready( function() {
+		
+
+function color() {
+    var letters = '0123456789ABCDEF'.split('');
+    var color = '#';
+    for (var i = 0; i < 6; i++ ) {
+        color += letters[Math.round(Math.random() * 15)];
+    }
+    return color;
+}
+		for(var p = 0; p != 10; p++) {
+		var a = color();
+		$('td').eq(p).css('background-color',a);
+		}
+	});
+</script>
+
 <title>Table Sample</title>
 </head>
 
